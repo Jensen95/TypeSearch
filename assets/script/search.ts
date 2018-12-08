@@ -49,7 +49,7 @@ function typeSearch(el: HTMLInputElement) {
 	});
 
 	function navigate(record: MinifiedSearchRecord) {
-		window.location.href = `https://www.npmjs.org/package/@types/${record.t}`;
+    window.open(`https://yarnpkg.com/en/package/@types/${record.t}`, '_blank')
 	}
 
 	function createDataSource(): Bloodhound<MinifiedSearchRecord> {
